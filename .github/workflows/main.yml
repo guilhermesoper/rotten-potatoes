@@ -48,5 +48,6 @@ jobs:
           images: guilhermesoper/rotten-potatoes:${{ github.run_number }}
           manifests: |
             k8s/deployment.yaml
+          strategy: none
           
           
