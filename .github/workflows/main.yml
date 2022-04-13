@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  CI:
     runs-on: ubuntu-latest
 
     steps:
@@ -30,6 +30,7 @@ jobs:
             guilhermesoper/rotten-potatoes:latest
             guilhermesoper/rotten-potatoes:${{ github.run_number }}
   CD:
+    needs: [CI]
     runs-on: ubuntu-latest
 
     steps:
