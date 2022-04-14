@@ -86,4 +86,4 @@ spec:
   - port: 8086
     targetPort: 5000
     nodePort: 30000
-  type: NodePort
+  type: LoadBalancer
